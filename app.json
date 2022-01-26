@@ -1,6 +1,6 @@
 {
     "name": "myapp",
-    "description": "Deploy V2ray VLESS on Heroku.",
+    "description": "Deploy myapp on Heroku.",
     "keywords": ["myapp"],
     "env": {
         "ID": {
