@@ -1,6 +1,6 @@
 {
-    "name": "myapp",
-    "description": "Deploy myapp on Heroku.",
+    "name": "samserver1",
+    "description": "Deploy samserver1 on Heroku.",
     "keywords": ["myapp"],
     "env": {
         "ID": {
