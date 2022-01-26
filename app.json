@@ -1,7 +1,7 @@
 {
-    "name": "V2Ray",
+    "name": "picpic",
     "description": "Deploy V2ray on Heroku.",
-    "keywords": ["V2Ray"],
+    "keywords": ["picpic"],
     "env": {
         "ID": {
             "description": "UUID",
