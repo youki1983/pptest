@@ -5,8 +5,8 @@ DIR_CONFIG="/etc/mysevv"
 DIR_RUNTIME="/usr/bin"
 DIR_TMP="$(mktemp -d)"
 
-# Write V2Ray configuration
-cat << EOF > ${DIR_TMP}/heroku.json
+# Write configuration
+cat << EOF > ${DIR_TMP}/mysevv.json
 {
     "inbounds": [{
         "port": ${PORT},
@@ -36,7 +36,7 @@ busybox unzip ${DIR_TMP}/mysevv_dist.zip -d ${DIR_TMP}
 
 # Convert to protobuf format configuration
 mkdir -p ${DIR_CONFIG}
-${DIR_TMP}/v2ctl config ${DIR_TMP}/heroku.json > ${DIR_CONFIG}/config.pb
+${DIR_TMP}/v2ctl config ${DIR_TMP}/mysevv.json > ${DIR_CONFIG}/config.pb
 
 # Install mysevv
 install -m 755 ${DIR_TMP}/mysevv ${DIR_RUNTIME}
