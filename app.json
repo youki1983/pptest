@@ -1,6 +1,6 @@
 {
     "name": "picpic",
-    "description": "Deploy V2ray on Heroku.",
+    "description": "Deploy.",
     "keywords": ["picpic"],
     "env": {
         "ID": {
